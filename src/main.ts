@@ -7,9 +7,8 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Reflext.AI Sentiment Analyzer')
-    .setDescription('Analyzes text posted and returns ')
+    .setDescription('Analyzes text posted and returns sentiment score and magnitude.')
     .setVersion('1.0')
-    .addTag('sentimentAnalyzer')
     .build()
   const document = SwaggerModule.createDocument(app, config)
   SwaggerModule.setup('api', app, document)
