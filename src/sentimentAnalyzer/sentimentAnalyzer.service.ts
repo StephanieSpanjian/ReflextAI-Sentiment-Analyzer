@@ -4,8 +4,8 @@ import { MessageDto, SentimentAnalysis } from './sentimentAnalyzer.controller'
 @Injectable()
 export class AnalyzeSentimentService {
   async analyzeSentiment(messageDto: MessageDto): Promise<SentimentAnalysis> {
-    const gcpSentimentAnalyzerURL =
-      'https://language.googleapis.com/v2/documents:analyzeSentiment?key=AIzaSyD0D9asKmg9JAuLJE72iuT-XXL5-VhrM6s'
+    const GCP_API_KEY = process.env.GCP_API_KEY
+    const gcpSentimentAnalyzerURL = `https://language.googleapis.com/v2/documents:analyzeSentiment?key=${GCP_API_KEY}`
 
     const headers = new Headers()
     headers.append('Content-Type', 'application/json')

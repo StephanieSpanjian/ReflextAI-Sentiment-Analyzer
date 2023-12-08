@@ -10,7 +10,7 @@
 
 ## Next Steps:
 
-1. Set up env vars for local, staging, production and remove hard-coded api key.
+1. Set up env vars for staging, production. Rename .example.env to .env and fill in key value.
 2. Set up logger to log errors to Sentry, DataDog or something similiar.
 3. Set up DB to store and memoize results. Check db before hitting GCP to limit requests to new text strings.
 4. Dockerize solution.
@@ -23,6 +23,8 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
+
+- Make sure you are using node version 18+.
 
 ```bash
 $ yarn

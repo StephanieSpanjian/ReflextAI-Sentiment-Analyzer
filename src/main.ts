@@ -1,15 +1,9 @@
 import { NestFactory } from '@nestjs/core'
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import { AppModule } from './app.module'
-// import { AnalyzeSentimentModule } from './sentimentAnalyzer/sentimentAnalyzer.module'
-
-// import { authenticateImplicitWithAdc } from './sentimentAnalyzer/gcp'
 
 async function bootstrap() {
-  // await authenticateImplicitWithAdc()
-
   const app = await NestFactory.create(AppModule)
-  // const app = await NestFactory.create(AnalyzeSentimentModule)
 
   const config = new DocumentBuilder()
     .setTitle('Reflext.AI Sentiment Analyzer')
