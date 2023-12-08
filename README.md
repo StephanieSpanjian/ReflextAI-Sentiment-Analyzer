@@ -10,12 +10,13 @@
 
 ## Next Steps:
 
-1. Set up logger to log errors to Sentry, DataDog or something similiar.
-2. Set up DB to store and memoize results. Check db before hitting GCP to limit requests to new text strings.
-3. Dockerize solution.
-4. Create a health check to replace the hello world endpoint.
-5. Test that a duplicate request with exact same string does not call GCP.
-6. Limit text input to GCP's limit or smaller and create unit test.
+1. Set up env vars for local, staging, production and remove hard-coded api key.
+2. Set up logger to log errors to Sentry, DataDog or something similiar.
+3. Set up DB to store and memoize results. Check db before hitting GCP to limit requests to new text strings.
+4. Dockerize solution.
+5. Create a health check to replace the hello world endpoint.
+6. Test that a duplicate request with exact same string does not call GCP.
+7. Limit text input to GCP's limit or smaller and create unit test.
 
 ## Cloned from
 
